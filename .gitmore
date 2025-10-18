@@ -1,0 +1,6 @@
+# Ignorer les fichiers d'environnement
+.env
+
+# Autres fichiers à ignorer (dossiers de cache, etc.)
+__pycache__/
+*.pyc

@@ -1,0 +1,34 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ data.titre }}</title>
+    <!-- Lien vers votre feuille de style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Titre principal du rapport -->
+    <h1>{{ data.titre }}</h1>
+
+    <!-- Informations sur le rapport -->
+    <p><strong>Auteur :</strong> {{ data.auteur }}</p>
+    <p><strong>Date de publication :</strong> {{ data.date_publication }}</p>
+
+    <!-- Boîte pour le résumé exécutif -->
+    <div class="executive-summary">
+        <h2>Résumé Exécutif</h2>
+        <p>{{ data.resume_executif }}</p>
+    </div>
+
+    <!-- Boucle pour générer chaque section du rapport -->
+    {% for section in data.sections %}
+        <section>
+            <h2>{{ section.titre_section }}</h2>
+            <!-- Le contenu généré par l'IA sera inséré ici -->
+            <p>{{ section.contenu_genere | replace('\n', '<br>') | safe }}</p>
+        </section>
+    {% endfor %}
+
+</body>
+</html>

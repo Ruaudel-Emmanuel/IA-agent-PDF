@@ -1,0 +1,38 @@
+{
+    "titre": "L'impact de l'Intelligence Artificielle sur le secteur de la santé en 2025",
+    "date_publication": "2025-10-18",
+    "auteur": "Expert IA & Santé",
+    "resume_executif": "Ce rapport analyse la transformation du secteur de la santé par l'intelligence artificielle en 2025. Il met en lumière les progrès significatifs dans le diagnostic, la personnalisation des traitements, la recherche pharmaceutique et la robotique chirurgicale, tout en abordant les défis éthiques et réglementaires associés.",
+    "sections": [
+        {
+            "id_section": "1",
+            "titre_section": "Introduction : L'IA, un nouveau paradigme pour la santé",
+            "points_cles": [
+                "Croissance du marché de l'IA en santé estimée à 45 milliards de dollars en 2026.",
+                "Adoption croissante de l'IA pour améliorer l'efficacité et la précision des soins.",
+                "L'IA comme levier pour faire face aux défis démographiques et sanitaires mondiaux."
+            ],
+            "instructions_generation": "Rédiger une introduction engageante sur la révolution de l'IA dans le domaine médical, en s'appuyant sur les points clés pour définir le contexte."
+        },
+        {
+            "id_section": "2",
+            "titre_section": "Diagnostic assisté : Voir l'invisible grâce à l'IA",
+            "points_cles": [
+                "Analyse d'images médicales (radios, scanners) pour détecter des anomalies précoces (nodules, lésions).",
+                "Réduction significative de la marge d'erreur diagnostique grâce à la comparaison instantanée de millions de cas.",
+                "Application dans la détection précoce de maladies comme Alzheimer et certains cancers."
+            ],
+            "instructions_generation": "Expliquer en détail comment les algorithmes d'IA analysent l'imagerie médicale. Inclure des statistiques sur l'amélioration de la précision du diagnostic et citer des exemples concrets de pathologies."
+        },
+        {
+            "id_section": "3",
+            "titre_section": "Médecine personnalisée et prédictive",
+            "points_cles": [
+                "Analyse de données génomiques pour orienter vers des traitements sur mesure.",
+                "Prédiction des risques de développer certaines maladies en se basant sur les profils génétiques et le mode de vie.",
+                "Optimisation de l'efficacité des traitements en anticipant la réponse du patient."
+            ],
+            "instructions_generation": "Décrire le processus par lequel l'IA permet de créer des plans de traitement individualisés. Mettre en avant le concept de médecine prédictive et ses bénéfices pour le patient."
+        }
+    ]
+}

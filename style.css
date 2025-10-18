@@ -1,0 +1,123 @@
+/* ==========================================================================
+   Feuille de style pour Rapport PDF - IA Santé 2025
+   Auteur: Votre Expert IA
+   Date: 2025-10-18
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Styles Généraux et Variables de Couleur
+   -------------------------------------------------------------------------- */
+:root {
+    --primary-color: #0D47A1; /* Bleu marine profond pour les titres principaux */
+    --secondary-color: #1976D2; /* Bleu plus clair pour les sous-titres */
+    --text-color: #333333; /* Gris foncé pour le texte courant */
+    --background-color: #FFFFFF; /* Fond blanc */
+    --accent-color: #BBDEFB; /* Bleu très clair pour les fonds de boîte */
+    --border-color: #E0E0E0; /* Gris clair pour les bordures fines */
+}
+
+@page {
+    size: A4;
+    margin: 20mm;
+
+    /* Contenu du pied de page : numérotation des pages */
+    @bottom-right {
+        content: "Page " counter(page) " sur " counter(pages);
+        font-family: 'Helvetica', Arial, sans-serif;
+        font-size: 9pt;
+        color: #888888;
+        vertical-align: top;
+        padding-top: 5mm;
+    }
+}
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* --------------------------------------------------------------------------
+   Typographie : Titres et Paragraphes
+   -------------------------------------------------------------------------- */
+
+h1, h2, h3 {
+    font-weight: bold;
+    break-after: avoid-page; /* Évite qu'un titre soit la dernière ligne d'une page */
+}
+
+h1 { /* Titre principal du rapport */
+    font-size: 28pt;
+    color: var(--primary-color);
+    text-align: left;
+    margin-bottom: 20mm;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 5mm;
+}
+
+h2 { /* Titres des sections */
+    font-size: 18pt;
+    color: var(--secondary-color);
+    margin-top: 15mm;
+    margin-bottom: 8mm;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 4mm;
+}
+
+p {
+    margin-bottom: 4mm;
+    text-align: justify;
+}
+
+/* --------------------------------------------------------------------------
+   Éléments de contenu : listes et boîtes
+   -------------------------------------------------------------------------- */
+
+ul {
+    list-style-type: disc;
+    padding-left: 5mm;
+    margin-bottom: 6mm;
+}
+
+li {
+    margin-bottom: 3mm;
+}
+
+/* Boîte pour le résumé exécutif */
+.executive-summary {
+    background-color: #f7f9fc;
+    border-left: 4px solid var(--secondary-color);
+    padding: 10mm;
+    margin-top: 10mm;
+    margin-bottom: 15mm;
+    font-style: italic;
+    color: #555;
+}
+
+.executive-summary h2 {
+    margin-top: 0;
+    border-bottom: none;
+    font-size: 14pt;
+    color: var(--primary-color);
+}
+
+/* --------------------------------------------------------------------------
+   En-tête et Pied de page (éléments fixes)
+   -------------------------------------------------------------------------- */
+
+header, footer {
+    position: fixed;
+    width: 100%;
+    font-size: 9pt;
+    color: #888888;
+}
+
+header {
+    top: -15mm; /* Position au-dessus de la marge supérieure */
+    left: 0;
+    right: 0;
+    text-align: left;
+    content: "Rapport IA & Santé 2025";
+}
